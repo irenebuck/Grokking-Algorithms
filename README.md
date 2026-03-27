@@ -6,7 +6,7 @@ All references to log mean log base 2. Example: log base 2 of 1024 = 10 or in te
 
 
 ## Chapter 1
-**Topics: Binary Search**  
+**Topic: Binary Search**  
 It only works when your list is sorted.
 
 It finds an item in a sorted list by repeatedly dividing the search interval in half. If the target value is less than the middle element, it narrows the search to the lower half; otherwise, it searches the upper half until the item is found or the list is exhausted.
@@ -16,7 +16,7 @@ Space = O(1)
 
 
 ## Chapter 2
-**Topics: Arrays and Linked Lists, and Selection Sort**  
+**Topic: Arrays and Linked Lists, and Selection Sort**  
 
 | Action | Arrays | Linked Lists |  
 | :---: | :---: | :---: |  
@@ -28,7 +28,7 @@ Arrays allow fast reads. All elements are stored next to each other, and should 
 
 Linked lists allow fast inserts and deletes. Elements are strewn all over memory space with each element storing the address of the next one. Linked Lists can only do sequential access, meaning starting at the first element and accessing in order until the end is reached.  
 
-**Selection Sort**
+**Topic: Selection Sort**  
 The book's version offers a helper function to find the index of the smallest value element, pops the element from the original array, and appends the smallest value to a new array. The new array is returned.  
 
 Worst and average case performance = O(n^2)  
