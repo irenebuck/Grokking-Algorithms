@@ -28,5 +28,13 @@ Arrays allow fast reads. All elements are stored next to each other, and should 
 
 Linked lists allow fast inserts and deletes. Elements are strewn all over memory space with each element storing the address of the next one. Linked Lists can only do sequential access, meaning starting at the first element and accessing in order until the end is reached.  
 
+**Selection Sort**
+The book's version offers a helper function to find the index of the smallest value element, pops the element from the original array, and appends the smallest value to a new array. The new array is returned.  
 
+Worst and average case performance = O(n^2)  
+Space = O(n)  
 
+My version does not create a new array, it swaps elements with it's neighbor when element at the next index is smaller. No helper function is needed as the loops are nested.  
+
+Worst and average case performance = O(n^2)  
+Space = O(1) 
