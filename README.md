@@ -25,3 +25,8 @@ Arrays can be accessed randomly, meaning any index can be accessed without requi
 | Reading | O(1) | O(n) |  
 | Insertion | O(n) | O(1) |  
 | Deletion | O(n) | O(1) |  
+
+Arrays allow fast reads. All elements are stored next to each other, and should be the same type.  
+
+Linked lists allow fast inserts and deletes. Elements are strewn all over memory space with each element storing the address of the next one.  
+ 
