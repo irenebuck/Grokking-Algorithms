@@ -47,10 +47,10 @@ Recursion is where a function calls itself and has two parts: 1- the recursive c
 
 The book's example is a simple factorial function, decerementing 1 for each call until base case of 1 is reached.  
 
-Time: O(n)
+Time: O(n)  
 Space: O(n)
 
 A recusive version of binary search is included for easy comparison to the "binary search.py" file. 
 
-Time: O(log n)
+Time: O(log n)  
 Space: O(log n)
