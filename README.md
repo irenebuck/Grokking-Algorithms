@@ -2,7 +2,8 @@
 Code practice and brief notes from the book Grokking Algorithms by Aditya Y. Bhargava
 
 **Reminders**  
-All references to log mean log base 2. Example: log base 2 of 1024 = 10 or in terms of exponentials, 2 to the power of 10 equals 1024. 
+All references to log mean log base 2.  
+Example: log base 2 of 1024 = 10 or in terms of exponentials, 2 to the power of 10 equals 1024. 
 
 
 ## Chapter 1
@@ -11,12 +12,12 @@ It only works when your list is sorted.
 
 It finds an item in a sorted list by repeatedly dividing the search interval in half. If the target value is less than the middle element, it narrows the search to the lower half; otherwise, it searches the upper half until the item is found or the list is exhausted.
 
-Worst and average case performance = O(log n)  
+Time = O(log n)  
 Space = O(1)
 
 
 ## Chapter 2
-**Topic: Arrays and Linked Lists, and Selection Sort**  
+**Topic: Arrays and Linked Lists**  
 
 | Action | Arrays | Linked Lists |  
 | :---: | :---: | :---: |  
@@ -31,10 +32,25 @@ Linked lists allow fast inserts and deletes. Elements are strewn all over memory
 **Topic: Selection Sort**  
 The book's version offers a helper function to find the index of the smallest value element, pops the element from the original array, and appends the smallest value to a new array. The new array is returned.  
 
-Worst and average case performance = O(n^2)  
+Time = O(n^2)  
 Space = O(n)  
 
 My version does not create a new array, it swaps elements with it's neighbor when element at the next index is smaller. No helper function is needed as the loops are nested.  
 
-Worst and average case performance = O(n^2)  
-Space = O(1) 
+Time = O(n^2)  
+Space = O(1)  
+
+
+## Chapter 3
+**Topic: Recursion**  
+Recursion is where a function calls itself and has two parts: 1- the recursive case where it calls itself and 2- the base case that stops the calling of the function.  
+
+The book's example is a simple factorial function, decerementing 1 for each call until base case of 1 is reached.  
+
+Time: O(n)
+Space: O(n)
+
+A recusive version of binary search is included for easy comparison to the "binary search.py" file. 
+
+Time: O(log n)
+Space: O(log n)
