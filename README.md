@@ -1,4 +1,4 @@
-# Grokking-Algorithms
+# Grokking Algorithms
 Code practice and brief notes from the book Grokking Algorithms by Aditya Y. Bhargava
 
 **Reminders**  
@@ -43,14 +43,31 @@ Space = O(1)
 
 ## Chapter 3
 **Topic: Recursion**  
-Recursion is where a function calls itself and has two parts: 1- the recursive case where it calls itself and 2- the base case that stops the calling of the function.  
+Recursion is where a function calls itself and has two parts:  
+1- the recursive case where it calls itself  
+2- the base case that stops the calling of the function.  
 
-The book's example is a simple factorial function, decerementing 1 for each call until base case of 1 is reached.  
+The book's example is a simple factorial function, decrementing one for each call until the base case of one is reached.  
 
 Time: O(n)  
 Space: O(n)
 
-A recusive version of binary search is included for easy comparison to the "binary search.py" file. 
+A recusive version of binary search is included for comparison to the "binary search.py" file. 
 
 Time: O(log n)  
-Space: O(log n)
+Space: O(log n)  
+
+
+## Chapter 4
+**Topic: Divide and Conquer**  
+This is a recusive technique for dividing your problem into smaller ones until you reach a base case. There are two steps:  
+1- Figure out the base case, typically the simplest case.  
+2- Divide or decrease your problem until it becomes the base case. When an array is involved, the base case is often an empty array or an array with one element in it.  
+
+The quicksort code sample demonstrates D&C.  
+
+**Topic: Quicksort**  
+This algorithm picks a pivot and partitions the rest of the elements into two subarrays. The first subarray includes elements less than or euqal to the pivot and the second has elements greater than the pivot. Each subarray gets the same treatment until there are 0 or 1 elements in the subarrays. Then, each side is recursively sorted and the results are concatenated.  
+
+Time: worst O(n^2), average O(n log n)  
+Space: O(n)
